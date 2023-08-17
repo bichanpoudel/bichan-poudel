@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latest Blog Post</title>
+  <style>
+    /* Add your CSS styling here */
+  </style>
+</head>
+<body>
+  <h1>Latest Blog Post</h1>
+  <div id="latest-blog"></div>
+
+  <script>
+    // Sample blog data (replace this with actual data)
+    const latestBlog = {
+      title: "New Blog Post",
+      date: "August 17, 2023",
+      content: "This is the content of the latest blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    };
+
+    // Function to update the content with the latest blog post
+    function updateLatestBlog() {
+      const latestBlogDiv = document.getElementById("latest-blog");
+      latestBlogDiv.innerHTML = `
+        <h2>${latestBlog.title}</h2>
+        <p>${latestBlog.date}</p>
+        <p>${latestBlog.content}</p>
+      `;
+    }
+
+    // Call the update function to initially display the latest blog
+    updateLatestBlog();
+  </script>
+</body>
+</html>
 
